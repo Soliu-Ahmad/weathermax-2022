@@ -81,7 +81,7 @@ function currentDate() {
     const d = new Date()
     const date = d.getDate()
     const day = d.toLocaleDateString('en-US', { weekday: 'short' });
-    const month = d.toLocaleDateString('en-US', { month: 'short' });
+    const month = d.toLocaleDateString('en-US', { month: 'long' });
     const year = d.getFullYear()
     return `${day} ${date} ${month} ${year}`;
 }
